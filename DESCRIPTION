@@ -1,40 +1,37 @@
 Package: ichseg
 Type: Package
-Title: Intracerebral Hemorrhage Segmentation of X-Ray Computed Tomography (CT)
-    Images
+Title: Intracerebral Hemorrhage Segmentation of X-Ray Computed
+        Tomography (CT) Images
 Version: 0.17.1
 Date: 2019-10-03
-Authors@R: c(person(given = "John", family = "Muschelli", email = "muschellij2@gmail.com",
-  role = c("aut", "cre")))
-Description: Performs preprocessing on computed tomography (CT) scans, including
-    skull stripping. Computes predictors of intracerebral hemorrhage (ICH) and uses
-    these to predict a binary hemorrhage mask from the data.
+Authors@R: c(person(given = "John", family = "Muschelli", email =
+        "muschellij2@gmail.com", role = c("aut", "cre")))
+Description: Performs preprocessing on computed tomography (CT) scans,
+        including skull stripping. Computes predictors of intracerebral
+        hemorrhage (ICH) and uses these to predict a binary hemorrhage
+        mask from the data.
 License: GPL-2
-Depends:
-    R (>= 2.10)
-Imports:
-    dcm2niir,
-    stats,
-    extrantsr (>= 3.1),
-    oro.nifti,
-    neurobase (>= 1.27.11.1),
-    fslr (>= 2.4),
-    magic,
-    randomForest,
-    shiny
-Suggests:
+Depends: R (>= 2.10)
+Imports: dcm2niir, stats, extrantsr (>= 3.1), oro.nifti, neurobase (>=
+        1.27.11.1), fslr (>= 2.4), magic, randomForest, shiny
+Suggests: 
     dcmtk,
     tractor.base,
     dplyr,
-    knitr
+    knitr,
+    covr,
+    testthat
 LazyData: TRUE
-Remotes: 
-    ANTsX/ANTsRCore, 
-    muschellij2/neurobase, 
-    muschellij2/extrantsr, 
-    muschellij2/fslr,
-    muschellij2/dcmtk,
-    muschellij2/dcm2niir
 VignetteBuilder: knitr
 Encoding: UTF-8
 RoxygenNote: 6.1.1
+Additional_repositories: https://neuroconductor.org/releases/2020/05/
+Repository: Neuroconductor-Devel-Releases
+Remotes:  
+    neuroconductor-devel-releases/dcm2niir@a5b1a93b7c71cf6c4b7b55579686e905b393360e,
+    neuroconductor-devel-releases/dcmtk@3d5973dd6d7cdfb0d9bfd3d8ef3b4c40a6fb8e39,
+    neuroconductor-devel-releases/oro.nifti@74ce39892532f9981c4b70d44107dbe8bae02f48,
+    neuroconductor-devel-releases/neurobase@fba55ea9db4a38ad18b0e15a1d6976a8f674142a,
+    neuroconductor-devel-releases/fslr@6316b11b8755f0cdfe07a84a04e269ab6bd4696b,
+    neuroconductor-devel-releases/extrantsr@24dac87d4179cee9d21cdb0b64d409e4f67d8aad
+biocViews: 
